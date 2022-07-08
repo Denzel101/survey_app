@@ -1,10 +1,13 @@
+import 'package:flutter/cupertino.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:http/http.dart' as http;
+import 'package:survey_app/survey/repository/background_service_repository.dart';
 import 'package:survey_app/survey/survey.dart';
 
 Future<SurveyRepository> initSurveyRepository() async {
-  // final backgroundServiceRepository = BackgroundServiceRepository();
-  // await backgroundServiceRepository.initializeService();
+  WidgetsFlutterBinding.ensureInitialized();
+  final backgroundServiceRepository = BackgroundServiceRepository();
+  await backgroundServiceRepository.initializeService();
   await Hive.initFlutter();
   Hive
     ..registerAdapter(SurveyHiveModelAdapter())
