@@ -4,8 +4,8 @@ import 'package:survey_app/survey/repository/background_service_repository.dart'
 import 'package:survey_app/survey/survey.dart';
 
 Future<SurveyRepository> initSurveyRepository() async {
-  final backgroundServiceRepository = BackgroundServiceRepository();
-  await backgroundServiceRepository.initializeService();
+  // final backgroundServiceRepository = BackgroundServiceRepository();
+  // await backgroundServiceRepository.initializeService();
   await Hive.initFlutter();
   Hive
     ..registerAdapter(SurveyHiveModelAdapter())
