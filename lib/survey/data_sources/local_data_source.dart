@@ -1,7 +1,6 @@
 import 'dart:developer';
 
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:survey_app/survey/models/survey_response.dart';
 import 'package:survey_app/survey/survey.dart';
 
 class LocalDataSource {

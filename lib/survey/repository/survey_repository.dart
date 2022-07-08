@@ -1,6 +1,5 @@
 import 'package:survey_app/survey/data_sources/data_sources.dart';
 import 'package:survey_app/survey/models/models.dart';
-import 'package:survey_app/survey/models/survey_response.dart';
 
 class SurveyRepository {
   SurveyRepository({
